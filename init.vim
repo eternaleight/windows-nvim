@@ -585,3 +585,5 @@ autocmd FileType cs setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
 ""*p クリップボードにペースト
 ":r !pbpaste
+let g:python3_host_prog = 'C:\Users\etern\AppData\Local\Programs\Python\Python310\python.exe'
+let g:loaded_perl_provider = 0
