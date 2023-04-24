@@ -1,0 +1,524 @@
+snippet '# !DOCTYPE' "todo annotation comment <Ctrl-l>"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+	<meta name="description" content="">
+</head>
+<body>
+</body>
+</html>
+endsnippet
+
+snippet '# !DOCTYPE2' "todo annotation comment <Ctrl-l>"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+	<meta name="description" content="">
+  <link rel="icon" href="/favicon.ico">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="sample.js" defer></script>
+</body>
+</html>
+endsnippet
+
+snippet '# !DOCTYPE3' "todo annotation comment <Ctrl-l>"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <link rel="icon" href="/favicon.ico" />
+	<meta name="description" content="" />
+</head>
+<body>
+</body>
+</html>
+endsnippet
+
+
+snippet '# resetcss' "todo annotation comment <Ctrl-l>"
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,xmp{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}input,select,textarea,button{outline:none;}body{color:#000;-webkit-text-size-adjust:100%;}img{max-width:100%;}*{box-sizing: border-box;}
+endsnippet
+
+snippet '# resetcss2' "todo annotation comment <Ctrl-l>"
+html {
+  color:#000;background:#FFF
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,xmp {
+  margin:0;padding:0
+}
+
+table {
+  border-collapse:collapse;border-spacing:0
+}
+
+fieldset,img {
+  border:0
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+  font-style:normal;font-weight:normal
+}
+
+ol,ul {
+  list-style:none
+}
+
+caption,th {
+  text-align:left
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;font-weight:normal
+}
+
+q:before,q:after {
+  content:''
+}
+
+abbr,acronym {
+  border:0;font-variant:normal
+}
+
+sup {
+  vertical-align:text-top
+}
+
+sub {
+  vertical-align:text-bottom
+}
+
+input,textarea,select {
+  font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%
+}
+
+legend {
+  color:#000
+}
+
+#yui3-css-stamp.cssreset {
+  display:none
+}
+
+input,select,textarea,button {
+  outline:none;
+}
+
+body {
+  color:#000;-webkit-text-size-adjust:100%;
+}
+
+img {
+  max-width:100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+endsnippet
+
+snippet "# for" "for (i=0; i<max; i++) ..."
+for (${1:Counter}=0; $1<${2:Max}; $1++) {
+	${3:Implementetion}
+	${3:Implementetion}
+	${3:Implementetion}
+}
+endsnippet
+
+snippet "# Line" "Line"
+読み	文字
+たて 　	│ ┃
+たてひだり	┨ ┥ ┤ ┫
+たてみぎ	┣ ┠ ┝ ├
+ひだりうえ	┌ ┏
+ひだりした	└ ┗
+ふとわく	┗┻━┛ ┏┳━┓
+ほそわく	└┴─┘ ┌┬─┐
+まんなか	┼ ╋ ┿ ╂
+みぎうえ	┐ ┓
+みぎした	┘ ┛
+よこ	─ ━
+よこうえ	┻ ┷ ┸ ┴
+よこした	┳　┯ ┰ ┬
+endsnippet
+
+snippet "# space" "space"
+空白なしの行
+&thinsp;&nbsp;より狭い空白
+&nbsp;半角スペースと同じサイズの空白
+&ensp;半角スペースより少し広めの空白
+&emsp;半角スペースよりさらに広めの空白　全角スペースとほぼ同じ幅
+endsnippet
+
+snippet "# prettier" "prettier"
+module.exports = {
+  printWidth: 100,
+  tabWidth: 2,
+  useTabs: false,
+  semi: false,
+  singleQuote: true,
+  quoteProps: "as-needed",
+  jsxSingleQuote: false,
+  trailingComma: "es5",
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: "always",
+  proseWrap: "preserve",
+  htmlWhitespaceSensitivity: "css",
+  endOfLine: "lf",
+  embeddedLanguageFormatting: "off",
+}
+endsnippet
+
+snippet '# eslint' "eslint"
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "tsx": true
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "@typescript-eslint/no-empty-interface": 0,
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
+endsnippet
+
+snippet '# tailwind_import' "tailwind_import"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+endsnippet
+
+snippet '# tailwind_config' "tailwind_config"
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+      "max-xl": { max: "1279px" },
+      "max-lg": { max: "1023px" },
+      "max-md": { max: "767px" },
+      "max-sm": { max: "639px" },
+    },
+    extend: {
+      fontFamily: {
+        noto: 'Noto Sans JP, sans-serif',
+      },
+      height: {
+        "half-screen": "50vh",
+      },
+      letterSpacing: {
+        tight: "-.015em",
+      },
+    },
+  },
+  plugins: [],
+  important: true,
+}
+endsnippet
+
+snippet '# tailwind_content' "tailwind_content"
+'./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'
+endsnippet
+
+snippet '# Noto_Sans_JP_import' "Noto_Sans_JP_import"
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+endsnippet
+
+snippet '# Noto_Sans_JP_font' "Noto_Sans_JP_font"
+font-family: 'Noto Sans JP', sans-serif;
+endsnippet
+
+snippet '# DotGothic16_import' "DotGothic16_import"
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family');
+endsnippet
+
+snippet '# Hachi_Maru_Pop_import' "Hachi_Maru_Pop_import"
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family');
+endsnippet
+
+snippet '# Mochiy_Pop_One_import' "Mochiy_Pop_One_import"
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family');
+endsnippet
+
+snippet '# Potta_One_import' "Potta_One_import"
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+endsnippet
+
+snippet '# Inter_import' "Inter_import"
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+endsnippet
+
+snippet '# Inter_font' "Inter_font"
+font-family: 'Inter', sans-serif;
+endsnippet
+
+snippet '# Rubik_import' "Rubik_import"
+@import url("https://use.typekit.net/lwz3cxl.css");
+endsnippet
+
+
+snippet '# Rubik_font' "Rubik_font"
+Rubik Regular
+
+font-family: rubik, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Rubik Italic
+
+font-family: rubik, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Rubik Bold
+
+font-family: rubik, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Rubik Bold Italic
+
+font-family: rubik, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+endsnippet
+
+snippet '# cubic_bezier' "cubic_bezier"
+\$easeInOutQuart: cubic-bezier(0.77, 0.2, 0.05, 1);
+\$easeInBack: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+\$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+cubic-bezier(0.77, 0.2, 0.05, 1) //easeInOutQuart
+cubic-bezier(0.785, 0.135, 0.15, 0.86) //easeInBack
+cubic-bezier(0.23, 1, 0.32, 1) //easeOutQuint
+endsnippet
+
+snippet '# media_screen' "media_screen"
+@media screen and (min-width: 480px) {
+  .media {
+  }
+}
+endsnippet
+
+snippet '# keyframes' "keyframes"
+
+@keyframes name 
+{
+  0% {
+  }
+  100% {
+  }
+}
+endsnippet
+
+snippet '# ease01' "ease01"
+ease: [0.6, 0.2, 0.25, 1]
+endsnippet
+snippet '# easeInOutQuart' "easeInOutQuart"
+ease: [0.77, 0.2, 0.05, 1]
+endsnippet
+snippet '# easeInBack' "easeInBack"
+ease: [0.785, 0.135, 0.15, 0.86]
+endsnippet
+snippet '# easeOutQuint' "easeOutQuint"
+ease: [0.23, 1, 0.32, 1]
+endsnippet
+
+snippet '# transition' "transition"
+transition: transform 3s $easeOutQuint, background-position 180s 3s linear;
+animation: blur 1.8s,name 2.8s alternate linear infinite;
+endsnippet
+
+snippet '# base' "base"
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  @include mq(md) {
+    font-size: 8px;
+  }
+  @include mq(sm) {
+    font-size: 8px;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  // color: var(--c-base-text);
+  // background: var(--c-base-background);
+  word-break: break-word;
+  word-wrap: break-word;
+  // font-family: var(--
+}
+
+img {
+  max-width: 100%;
+}
+p,
+blockquote,
+dl,
+dd,
+dt,
+section {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+endsnippet
+
+snippet '# utilis' "utilis"
+$breakpoints: (
+  'xs': 'screen and (max-width: 400px)',
+  'sm': 'screen and (max-width: 640px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1024px)',
+  'xl': 'screen and (max-width: 1280px)',
+);
+
+@mixin mq($size) {
+  @media #{map-get($breakpoints, $size)} {
+    @content;
+  }
+}
+endsnippet
+
+snippet '# variables' "variables"
+:root {
+  // --c-base-background: #fff;
+  // /* --c-base-background: #1c1c1f; */
+  // --c-base-background-lighter: #292c34;
+  // --c-base-text: #fff;
+  // --c-gray: rgba(214, 226, 243, 0.7);
+  // --c-border: rgba(115, 125, 130, 0.4);
+  // --font-family-base: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+  //   'Hiragino Sans', Meiryo, sans-serif;
+  // --font-family-alphabet: system-ui, -apple-system, 'Segoe UI', Arial,
+  //   sans-serif;
+}
+endsnippet
+
+snippet '# Exec' "Exec"
+exec.Command("open", "http://localhost:8080").Start()
+endsnippet
+
+snippet  "# For_statement" "For_statement"
+import { ReactNode } from "react"
+const For = <T,>({
+  v,
+  children,
+}: {
+  v: [T, (v: T) => unknown, (v: T) => T];
+  children: (v: T, index: number) => ReactNode;
+}) => {
+  let index = 0;
+  const value: ReactNode[] = [];
+  for (let i = v[0]; v[1](i); i = v[2](i)) {
+    value.push(children(i, index++));
+  }
+  return <>{value}</>;
+};
+
+const ForTest = () => {
+  return (
+    <For v={[5, (i) => i < 10, (i) => i + 1]}>
+      {(i, index) => (
+        <button key={i}>
+          {index}番目は{i}
+        </button>
+      )}
+    </For>
+  );
+};
+endsnippet
+snippet "# vue" "vue"
+<template>
+</template>
+<script setup lang="ts">
+</script>
+<style scoped>
+</style>
+endsnippet
+
+snippet "# postcss.config.js" "postcss.config.js"
+module.exports = {
+  plugins: [
+    'tailwindcss',
+    'autoprefixer',
+  ],
+}
+endsnippet
